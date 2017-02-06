@@ -62,5 +62,5 @@ tidy1 <- subJoinX
 tidy2 <- aggregate(subJoinX, by=list(act = subJoinX$act, sub=subJoinX$sub), mean)
 
 # write outputs
-write.table(tidy1, "tidy_data_1.txt")
-write.table(tidy2, "tidy_data_2.txt")
+write.table(tidy1, "tidy_data_1.txt", row.name=FALSE)
+write.table(tidy2, "tidy_data_2.txt", row.name=FALSE)
